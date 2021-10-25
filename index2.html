@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<title>repl.it</title>
+<html>
+    <Head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="styles.css">
+        
+    <style>
+    .not-allowed {cursor: not-allowed}
+    .border {border-width: 2px; border-style: solid; border-color: rgb(0, 0, 0);}
+    .lorem {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-style: italic;
+        cursor:progress;
+        }
+    .header {
+        text-align:center;
+        }
+    </style>
+    </Head>
+    <Body>
+        <H1>Braxton Allen</H1>
+        <H2>Software Developer</H2>
+    <HR></HR>
+        <p>I'm excited to start my journey in software developement. </p>
+        <!-- Couldn't figure out how to get the border to stick to the picture.>-->
+        <p><div class="border">
+            <img src="images\stressed.jpg" alt="stressed guy" width="180" height="100">
+            </div> 
+        </p>
+        <!--Why doesn't the cursor change on the button, 
+        but will on the rest of the line?-->
+        <div class=not-allowed>
+        <button id="myBtn">I dare you</button>
+        </div>
+ 
+        <script>
+
+        function firstFunction() {
+         alert("The first function excecuted succesfully!)");
+         }
+            
+        function secondFunction() {
+         alert("Gotcha ;)");
+         }
+            
+         var btn = document.getElementById("myBtn");
+            
+         btn.onclick = firstFunction;
+         btn.onclick = secondFunction; 
+       </script>
+       
+        <script type="text/javascript">
+
+            var visitor_name = prompt("What's your name?","");
+          
+            var expr_date = new Date("December 30, 2050");
+          
+            var cookie_date = expr_date.toUTCString();
+          
+            final_cookie = "Name =" + encodeURIComponent(visitor_name) + "; expires on = " + cookie_date;
+          
+            document.cookie = final_cookie;
+          
+            alert(final_cookie); 
+          
+          </script>
+        <H3>My Projects</H3>
+        <p>Coming Soon</p>
+        <H3>About Me</H3>
+    <div class="lorem">
+        <p>Lorem ipsum dolor sit amet, sea iudico inimicus et, ad pri everti fabulas. Dolor legere audiam ea per, et platonem ullamcorper delicatissimi eam, equidem debitis accusamus nam in. An paulo iisque atomorum eam, no esse delenit vocibus ius, alienum officiis ponderum an est. Vocibus consulatu dissentiunt at eam, quaeque volutpat moderatius sed eu, et vix saperet fierent sapientem. Ex quo lucilius hendrerit referrentur.
+    Ut nostro oblique eos, consequat theophrastus ne mea, has nonumy latine et. Ad mea vidit partem splendide. Eos nominavi delectus laboramus ex. Apeirian neglegentur ius ei.
+        </p>
+    </div>
+    <H3>Contact Me</H3>
+    <p>Email: <a href="mailto:braxtonallen@yahoo.com">braxtonallen@yahoo.com</a> </p>
+    <p>Phone #: <a href="call:620-200-5400">620-200-5400</a></p>
+    </Body>
+</html>
